@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de inversión inmobiliaria: rentabilidad de arriendo | Johana Bolaños</title>
+<meta name="description" content="Calcula la rentabilidad neta de comprar un inmueble para arrendar en Bogotá: flujo de caja, retorno sobre tu dinero y patrimonio estimado a cinco años.">
+<link rel="canonical" href="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<link rel="alternate" hreflang="es" href="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<link rel="alternate" hreflang="en" href="https://johanabolanos.com/en/investment-calculator">
+<link rel="alternate" hreflang="x-default" href="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de inversión inmobiliaria: rentabilidad de arriendo | Johana Bolaños">
+<meta property="og:description" content="Calcula la rentabilidad neta de comprar un inmueble para arrendar en Bogotá: flujo de caja, retorno sobre tu dinero y patrimonio estimado a cinco años.">
+<meta property="og:url" content="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<meta property="og:image" content="https://johanabolanos.com/assets/img/johana.webp">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1E2A3A">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de inversión inmobiliaria", "url": "https://johanabolanos.com/calculadora-inversion-inmobiliaria", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es", "offers": {"@type": "Offer", "price": 0, "priceCurrency": "COP"}}</script>
+</head>
+<body>
+<header class="top">
+ <nav class="nav" aria-label="Principal">
+  <a class="brand" href="index.html"><b>Johana Bolaños</b><span>ASESORA INMOBILIARIA</span></a>
+  <div class="links" id="menu"><a href="index.html#inmuebles">Inmuebles</a><a href="index.html#servicios">Servicios</a><a href="calculadora-credito-hipotecario.html" aria-current="page">Calculadoras</a><a href="index.html#johana">Sobre mí</a><a href="blog.html">Blog</a><a href="index.html#contacto">Contacto</a><a class="lang" href="en/investment-calculator.html" hreflang="en">English</a></div>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
+ </nav>
+</header>
+<main><section class="hero band"><div class="wrap" style="display:block">
+ <nav class="crumbs"><a href="index.html">Inicio</a> / Calculadoras</nav>
+ <h1 style="font-size:clamp(34px,4.6vw,54px)">Calculadora de inversión inmobiliaria</h1><p class="lead">¿Vale la pena comprar para arrendar? Ingresa tus supuestos y mira la rentabilidad real, después de gastos.</p>
+ <div class="ctas"><a class="btn btn-ghost" href="calculadora-credito-hipotecario.html">Calculadora hipotecaria →</a></div></div></section>
+<section class="band"><div class="wrap calc" data-calc="inv">
+ <div class="calc-in">
+ <fieldset><legend>Compra</legend>
+ <label for="i-precio">Precio del inmueble<input id="i-precio" type="text" inputmode="numeric" data-money value="350000000" ><small>COP</small></label>
+ <label for="i-gastos">Gastos de compra (% del precio)<input id="i-gastos" type="text" inputmode="decimal" value="2,5" ></label>
+ <label for="i-remod">Remodelación o amoblado<input id="i-remod" type="text" inputmode="numeric" data-money value="0" ><small>COP</small></label></fieldset>
+ <fieldset><legend>Arriendo y gastos</legend>
+ <label for="i-arriendo">Arriendo mensual<input id="i-arriendo" type="text" inputmode="numeric" data-money value="1800000" ><small>COP</small></label>
+ <label for="i-admin">Administración mensual<input id="i-admin" type="text" inputmode="numeric" data-money value="250000" ><small>COP</small></label>
+ <label for="i-predial">Impuesto predial anual<input id="i-predial" type="text" inputmode="numeric" data-money value="1200000" ><small>COP</small></label>
+ <label for="i-otros">Mantenimiento y otros (anual)<input id="i-otros" type="text" inputmode="numeric" data-money value="600000" ><small>COP</small></label>
+ <label for="i-vacios">Meses sin arrendatario al año<input id="i-vacios" type="text" inputmode="decimal" value="1" ></label>
+ <label for="i-comision">Comisión de administración del arriendo (%)<input id="i-comision" type="text" inputmode="decimal" value="0" ><small>Si lo administra una inmobiliaria, suele estar entre 8 % y 10 % del canon</small></label></fieldset>
+ <fieldset><legend>Financiación y valorización</legend>
+ <label for="i-fin">Porcentaje financiado con crédito (%)<input id="i-fin" type="text" inputmode="decimal" value="0" ><small>0 = compra de contado</small></label>
+ <label for="i-tasa">Tasa del crédito E.A. (%)<input id="i-tasa" type="text" inputmode="decimal" value="15,0" ></label>
+ <label for="i-plazo">Plazo del crédito (años)<input id="i-plazo" type="text" inputmode="decimal" value="15" ></label>
+ <label for="i-valor">Valorización anual esperada (%)<input id="i-valor" type="text" inputmode="decimal" value="4" ></label></fieldset></div>
+ <div class="calc-out"><div class="res" id="i-out" aria-live="polite"></div><p class="warn" id="i-warn"></p>
+  <form class="lead-form report-form" novalidate>
+ <h3 style="font-size:24px">Recibe el informe completo en tu correo</h3>
+ <p class="place" style="margin:0">Te enviamos el detalle de esta simulación y, si quieres, te ayudamos a revisarla con tus cifras reales.</p>
+ <label>Nombre completo<input name="nombre" autocomplete="name"></label>
+ <label>Teléfono (WhatsApp)<input name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000"></label>
+ <label>Correo electrónico<input name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com"></label>
+ <label style="position:absolute;left:-9999px" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+ <label class="chk"><input type="checkbox" name="consent"><span>Autorizo el tratamiento de mis datos personales según la <a href="politica-de-datos.html" target="_blank">política de tratamiento de datos</a>.</span></label>
+ 
+ <p class="err" role="alert"></p>
+ <button class="btn btn-navy" type="submit">Enviarme el informe</button>
+ <div class="ok" role="status"></div>
+</form></div>
+</div>
+<div class="wrap"><p class="note"><b>Aviso importante:</b> Simulación orientativa basada en los supuestos que ingresas. No incluye el impuesto de renta sobre los arriendos, la ganancia ocasional al vender ni cambios en el canon. La valorización futura no está garantizada y puede ser menor o negativa. La rentabilidad neta se calcula sobre el costo total (precio, gastos de compra y remodelación). No constituye una recomendación de inversión ni asesoría financiera o tributaria personalizada.</p></div></section></main>
+<script type="application/json" id="calc-i18n">{"locale": "es-CO", "dec": ",", "years": "años", "yearShort": "año", "precio": "Precio del inmueble", "refText": "Referencia Superfinanciera (crédito en pesos, 15 a 20 años, corte {date}): entre {min} y {max} E.A.", "refShort": "Tasas de referencia Superfinanciera, corte", "warnIni": "Por norma general los bancos financian hasta el {p} % de cuota inicial mínima; con menos, el crédito podría no aprobarse.", "warnRate": "Revisa la tasa: está fuera del rango que hoy reportan los bancos.", "cuota": "Cuota mensual estimada", "prestamo": "Valor del crédito", "inicial": "Cuota inicial", "gastos": "Gastos de escrituración estimados", "efectivo": "Dinero que necesitas para cerrar", "ingreso": "Ingreso familiar recomendado", "intereses": "Intereses pagados en todo el plazo", "tasaMes": "Tasa mes vencido equivalente", "tipoLbl": "Tipo de vivienda", "iniLbl": "Cuota inicial", "plazoLbl": "Plazo", "tasaLbl": "Tasa", "mailTitleH": "Simulación de crédito hipotecario", "mailTitleI": "Simulación de inversión inmobiliaria", "netaLbl": "Rentabilidad neta anual", "brutaLbl": "Rentabilidad bruta anual", "flujoMes": "Flujo de caja mensual", "efectivoInv": "Dinero propio invertido", "cocLbl": "Retorno sobre tu dinero (anual)", "v5Lbl": "Valor estimado en 5 años", "patrimonio5": "Patrimonio en 5 años (valor menos deuda)", "retorno5": "Ganancia total estimada en 5 años", "payback": "Recuperas tu dinero en", "noPayback": "No se recupera con el flujo", "arriendoLbl": "Arriendo mensual", "finLbl": "Financiación", "warnNeg": "Atención: con estos supuestos el arriendo no cubre los gastos y la cuota del crédito; tendrías que aportar dinero cada mes.", "errName": "Escribe tu nombre.", "errPhone": "Escribe un teléfono válido.", "errEmail": "Escribe un correo válido.", "errConsent": "Debes autorizar el tratamiento de tus datos.", "okSent": "Gracias. Enviamos tu informe a <b>{email}</b>. Si no lo ves en unos minutos, revisa la carpeta de spam.", "okWa": "Gracias. Para recibir tu informe, envíanos tu simulación por WhatsApp:", "okWaLink": "enviar mi simulación", "waIntro": "Hola Johana, soy {n} y quiero el informe de esta simulación:", "waContact": "Mis datos:"}</script>
+<script type="application/json" id="calc-cfg">{"rates": {"date": "23/10/2026", "novis": {"min": 12.66, "max": 15.95, "default": 15.0}, "vis": {"min": 11.32, "max": 15.4, "default": 14.0}}, "closing": 2.5, "wa": "573124066324", "zoho": {"action": ""}}</script>
+<footer class="foot"><div class="wrap">
+ <div><b style="color:#F7F4EE;font-family:'Cormorant Garamond',serif;font-size:20px">Johana Bolaños</b><br>Asesora inmobiliaria · Bogotá, Colombia<br>
+ <a href="https://www.instagram.com/johanabolanos.inmo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@johanabolanos.inmo" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/share/1A7pJb3Ej2/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="blog.html">Blog</a><br>
+ <a href="calculadora-credito-hipotecario.html">Calculadora hipotecaria</a><a href="calculadora-inversion-inmobiliaria.html">Calculadora de inversión</a><a href="politica-de-datos.html">Política de datos</a></div>
+ <div style="max-width:520px">© 2026 Johana Bolaños. La información de los inmuebles está sujeta a verificación. Los artículos del blog son orientativos y no reemplazan la asesoría de un abogado o contador para tu caso.</div>
+</div></footer>
+<a class="wa" href="https://wa.me/573124066324?text=Hola%20Johana%2C%20quiero%20asesor%C3%ADa%20inmobiliaria" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+<script src="assets/site.js"></script><script src="assets/calc.js"></script>
+</body>
+</html>
