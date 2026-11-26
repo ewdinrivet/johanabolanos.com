@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortgage calculator for Colombia | Johana Bolaños</title>
+<meta name="description" content="Estimate your monthly home loan payment, down payment, closing costs and recommended income, with reference rates from Colombia&#x27;s Financial Superintendency.">
+<link rel="canonical" href="https://johanabolanos.com/en/mortgage-calculator">
+<link rel="alternate" hreflang="en" href="https://johanabolanos.com/en/mortgage-calculator">
+<link rel="alternate" hreflang="es" href="https://johanabolanos.com/calculadora-credito-hipotecario">
+<link rel="alternate" hreflang="x-default" href="https://johanabolanos.com/calculadora-credito-hipotecario">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mortgage calculator for Colombia | Johana Bolaños">
+<meta property="og:description" content="Estimate your monthly home loan payment, down payment, closing costs and recommended income, with reference rates from Colombia&#x27;s Financial Superintendency.">
+<meta property="og:url" content="https://johanabolanos.com/en/mortgage-calculator">
+<meta property="og:image" content="https://johanabolanos.com/assets/img/johana.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1E2A3A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Mortgage calculator", "url": "https://johanabolanos.com/en/mortgage-calculator", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "en", "offers": {"@type": "Offer", "price": 0, "priceCurrency": "COP"}}</script>
+</head>
+<body>
+<header class="top">
+ <nav class="nav" aria-label="Principal">
+  <a class="brand" href="../en/index.html"><b>Johana Bolaños</b><span>REAL ESTATE ADVISOR</span></a>
+  <div class="links" id="menu"><a href="../en/index.html#inmuebles">Properties</a><a href="../en/index.html#servicios">Services</a><a href="../en/mortgage-calculator.html" aria-current="page">Calculators</a><a href="../en/index.html#johana">About</a><a href="../en/blog.html">Blog</a><a href="../en/index.html#contacto">Contact</a><a class="lang" href="../calculadora-credito-hipotecario.html" hreflang="es">Español</a></div>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+ </nav>
+</header>
+<main><section class="hero band"><div class="wrap" style="display:block">
+ <nav class="crumbs"><a href="../en/index.html">Home</a> / Calculators</nav>
+ <h1 style="font-size:clamp(34px,4.6vw,54px)">Mortgage calculator</h1><p class="lead">Simulate a fixed-payment peso home loan in Colombia. Change any value and the result updates instantly.</p>
+ <div class="ctas"><a class="btn btn-ghost" href="../en/investment-calculator.html">Investment calculator →</a></div></div></section>
+<section class="band"><div class="wrap calc" data-calc="hipo">
+ <div class="calc-in">
+ <label for="h-precio">Property price<input id="h-precio" type="text" inputmode="numeric" data-money value="400000000" ><small>COP</small></label>
+ <label for="h-tipo">Home type<select id="h-tipo"><option value="novis">No VIS</option><option value="vis">VIS (social housing)</option></select></label>
+ <label for="h-ini">Down payment (%)<input id="h-ini" type="text" inputmode="decimal" value="30" ><small>Non-VIS: 30% · VIS: 20%</small></label>
+ <label for="h-plazo">Term (years)<input id="h-plazo" type="text" inputmode="decimal" value="20" ></label>
+ <label for="h-tasa">Effective annual rate (%)<input id="h-tasa" type="text" inputmode="decimal" value="15.0" ></label>
+ <div class="chips"><button type="button" data-rate="min">Lowest reported rate</button><button type="button" data-rate="max">Highest reported rate</button></div>
+ <p class="refnote" id="h-ref"></p></div>
+ <div class="calc-out"><div class="res" id="h-out" aria-live="polite"></div><p class="warn" id="h-warn"></p>
+  <form class="lead-form report-form" novalidate>
+ <h3 style="font-size:24px">Get the full report by email</h3>
+ <p class="place" style="margin:0">We'll send you the details of this simulation and, if you'd like, help you review it with your real figures.</p>
+ <label>Full name<input name="nombre" autocomplete="name"></label>
+ <label>Phone (WhatsApp)<input name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000"></label>
+ <label>Email<input name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com"></label>
+ <label style="position:absolute;left:-9999px" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+ <label class="chk"><input type="checkbox" name="consent"><span>I authorize the processing of my personal data under the <a href="privacy-policy.html" target="_blank">privacy policy</a>.</span></label>
+ 
+ <p class="err" role="alert"></p>
+ <button class="btn btn-navy" type="submit">Send me the report</button>
+ <div class="ok" role="status"></div>
+</form></div>
+</div>
+<div class="wrap"><p class="note"><b>Important notice:</b> This is an indicative simulation with a fixed peso payment and a constant effective annual rate. It excludes life and fire/earthquake insurance and UVR-indexed loans. The rates shown are references published by Colombia's Financial Superintendency for 15–20 year peso loans; the final rate, amount and terms are set by each lender based on your profile. Recommended income assumes the payment stays under 30% of income. Closing costs are estimated at 2.5% of the price. This is not a loan offer or personalized financial advice.</p></div></section></main>
+<script type="application/json" id="calc-i18n">{"locale": "en-US", "dec": ".", "years": "years", "yearShort": "yr", "precio": "Property price", "refText": "Financial Superintendency reference (peso loans, 15–20 years, as of {date}): between {min} and {max} effective annual rate.", "refShort": "Superintendency reference rates as of", "warnIni": "As a general rule, Colombian banks require at least a {p}% down payment; with less, the loan may not be approved.", "warnRate": "Check the rate: it's outside the range banks currently report.", "cuota": "Estimated monthly payment", "prestamo": "Loan amount", "inicial": "Down payment", "gastos": "Estimated closing costs", "efectivo": "Cash needed to close", "ingreso": "Recommended household income", "intereses": "Total interest over the term", "tasaMes": "Equivalent monthly rate", "tipoLbl": "Home type", "iniLbl": "Down payment", "plazoLbl": "Term", "tasaLbl": "Rate", "mailTitleH": "Mortgage simulation", "mailTitleI": "Real estate investment simulation", "netaLbl": "Net annual yield", "brutaLbl": "Gross annual yield", "flujoMes": "Monthly cash flow", "efectivoInv": "Your own cash invested", "cocLbl": "Cash-on-cash return (annual)", "v5Lbl": "Estimated value in 5 years", "patrimonio5": "Equity in 5 years (value minus debt)", "retorno5": "Estimated total gain in 5 years", "payback": "Payback period", "noPayback": "Not recovered from cash flow", "arriendoLbl": "Monthly rent", "finLbl": "Financing", "warnNeg": "Heads up: with these assumptions the rent doesn't cover expenses and the loan payment; you'd need to add money every month.", "errName": "Please enter your name.", "errPhone": "Please enter a valid phone number.", "errEmail": "Please enter a valid email.", "errConsent": "Please authorize the processing of your data.", "okSent": "Thank you. We've sent your report to <b>{email}</b>. If you don't see it in a few minutes, check your spam folder.", "okWa": "Thank you. To get your report, send us your simulation on WhatsApp:", "okWaLink": "send my simulation", "waIntro": "Hi Johana, I'm {n} and I'd like the report for this simulation:", "waContact": "My details:"}</script>
+<script type="application/json" id="calc-cfg">{"rates": {"date": "23/10/2026", "novis": {"min": 12.66, "max": 15.95, "default": 15.0}, "vis": {"min": 11.32, "max": 15.4, "default": 14.0}}, "closing": 2.5, "wa": "573124066324", "zoho": {"action": ""}}</script>
+<footer class="foot"><div class="wrap">
+ <div><b style="color:#F7F4EE;font-family:'Cormorant Garamond',serif;font-size:20px">Johana Bolaños</b><br>Real estate advisor · Bogotá, Colombia<br>
+ <a href="https://www.instagram.com/johanabolanos.inmo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@johanabolanos.inmo" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/share/1A7pJb3Ej2/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="../en/blog.html">Blog</a><br>
+ <a href="../en/mortgage-calculator.html">Mortgage calculator</a><a href="../en/investment-calculator.html">Investment calculator</a><a href="../en/privacy-policy.html">Privacy policy</a></div>
+ <div style="max-width:520px">© 2026 Johana Bolaños. Property details are subject to verification. Blog articles are general guidance and do not replace advice from a lawyer or accountant for your specific case.</div>
+</div></footer>
+<a class="wa" href="https://wa.me/573124066324?text=Hi%20Johana%2C%20I%27d%20like%20real%20estate%20advice" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+<script src="../assets/site.js"></script><script src="../assets/calc.js"></script>
+</body>
+</html>

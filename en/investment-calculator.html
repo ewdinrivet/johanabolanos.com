@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real estate investment calculator: rental yield | Johana Bolaños</title>
+<meta name="description" content="Calculate the net yield of buying a property to rent in Bogotá: cash flow, cash-on-cash return and estimated equity after five years.">
+<link rel="canonical" href="https://johanabolanos.com/en/investment-calculator">
+<link rel="alternate" hreflang="en" href="https://johanabolanos.com/en/investment-calculator">
+<link rel="alternate" hreflang="es" href="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<link rel="alternate" hreflang="x-default" href="https://johanabolanos.com/calculadora-inversion-inmobiliaria">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Real estate investment calculator: rental yield | Johana Bolaños">
+<meta property="og:description" content="Calculate the net yield of buying a property to rent in Bogotá: cash flow, cash-on-cash return and estimated equity after five years.">
+<meta property="og:url" content="https://johanabolanos.com/en/investment-calculator">
+<meta property="og:image" content="https://johanabolanos.com/assets/img/johana.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1E2A3A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Real estate investment calculator", "url": "https://johanabolanos.com/en/investment-calculator", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "en", "offers": {"@type": "Offer", "price": 0, "priceCurrency": "COP"}}</script>
+</head>
+<body>
+<header class="top">
+ <nav class="nav" aria-label="Principal">
+  <a class="brand" href="../en/index.html"><b>Johana Bolaños</b><span>REAL ESTATE ADVISOR</span></a>
+  <div class="links" id="menu"><a href="../en/index.html#inmuebles">Properties</a><a href="../en/index.html#servicios">Services</a><a href="../en/mortgage-calculator.html" aria-current="page">Calculators</a><a href="../en/index.html#johana">About</a><a href="../en/blog.html">Blog</a><a href="../en/index.html#contacto">Contact</a><a class="lang" href="../calculadora-inversion-inmobiliaria.html" hreflang="es">Español</a></div>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+ </nav>
+</header>
+<main><section class="hero band"><div class="wrap" style="display:block">
+ <nav class="crumbs"><a href="../en/index.html">Home</a> / Calculators</nav>
+ <h1 style="font-size:clamp(34px,4.6vw,54px)">Real estate investment calculator</h1><p class="lead">Is buying to rent worth it? Enter your assumptions and see the real return after expenses.</p>
+ <div class="ctas"><a class="btn btn-ghost" href="../en/mortgage-calculator.html">Mortgage calculator →</a></div></div></section>
+<section class="band"><div class="wrap calc" data-calc="inv">
+ <div class="calc-in">
+ <fieldset><legend>Purchase</legend>
+ <label for="i-precio">Property price<input id="i-precio" type="text" inputmode="numeric" data-money value="350000000" ><small>COP</small></label>
+ <label for="i-gastos">Closing costs (% of price)<input id="i-gastos" type="text" inputmode="decimal" value="2.5" ></label>
+ <label for="i-remod">Renovation or furnishing<input id="i-remod" type="text" inputmode="numeric" data-money value="0" ><small>COP</small></label></fieldset>
+ <fieldset><legend>Rent and expenses</legend>
+ <label for="i-arriendo">Monthly rent<input id="i-arriendo" type="text" inputmode="numeric" data-money value="1800000" ><small>COP</small></label>
+ <label for="i-admin">Monthly HOA fee<input id="i-admin" type="text" inputmode="numeric" data-money value="250000" ><small>COP</small></label>
+ <label for="i-predial">Annual property tax<input id="i-predial" type="text" inputmode="numeric" data-money value="1200000" ><small>COP</small></label>
+ <label for="i-otros">Maintenance and other (annual)<input id="i-otros" type="text" inputmode="numeric" data-money value="600000" ><small>COP</small></label>
+ <label for="i-vacios">Vacant months per year<input id="i-vacios" type="text" inputmode="decimal" value="1" ></label>
+ <label for="i-comision">Rental management fee (%)<input id="i-comision" type="text" inputmode="decimal" value="0" ><small>If managed by an agency, typically 8%–10% of the rent</small></label></fieldset>
+ <fieldset><legend>Financing and appreciation</legend>
+ <label for="i-fin">Share financed with a loan (%)<input id="i-fin" type="text" inputmode="decimal" value="0" ><small>0 = cash purchase</small></label>
+ <label for="i-tasa">Loan rate, effective annual (%)<input id="i-tasa" type="text" inputmode="decimal" value="15.0" ></label>
+ <label for="i-plazo">Loan term (years)<input id="i-plazo" type="text" inputmode="decimal" value="15" ></label>
+ <label for="i-valor">Expected annual appreciation (%)<input id="i-valor" type="text" inputmode="decimal" value="4" ></label></fieldset></div>
+ <div class="calc-out"><div class="res" id="i-out" aria-live="polite"></div><p class="warn" id="i-warn"></p>
+  <form class="lead-form report-form" novalidate>
+ <h3 style="font-size:24px">Get the full report by email</h3>
+ <p class="place" style="margin:0">We'll send you the details of this simulation and, if you'd like, help you review it with your real figures.</p>
+ <label>Full name<input name="nombre" autocomplete="name"></label>
+ <label>Phone (WhatsApp)<input name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000"></label>
+ <label>Email<input name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com"></label>
+ <label style="position:absolute;left:-9999px" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+ <label class="chk"><input type="checkbox" name="consent"><span>I authorize the processing of my personal data under the <a href="privacy-policy.html" target="_blank">privacy policy</a>.</span></label>
+ 
+ <p class="err" role="alert"></p>
+ <button class="btn btn-navy" type="submit">Send me the report</button>
+ <div class="ok" role="status"></div>
+</form></div>
+</div>
+<div class="wrap"><p class="note"><b>Important notice:</b> Indicative simulation based on your assumptions. It excludes income tax on rent, capital gains tax on sale and changes in rent. Future appreciation is not guaranteed and may be lower or negative. Net yield is calculated on total cost (price, closing costs and renovation). This is not an investment recommendation or personalized financial or tax advice.</p></div></section></main>
+<script type="application/json" id="calc-i18n">{"locale": "en-US", "dec": ".", "years": "years", "yearShort": "yr", "precio": "Property price", "refText": "Financial Superintendency reference (peso loans, 15–20 years, as of {date}): between {min} and {max} effective annual rate.", "refShort": "Superintendency reference rates as of", "warnIni": "As a general rule, Colombian banks require at least a {p}% down payment; with less, the loan may not be approved.", "warnRate": "Check the rate: it's outside the range banks currently report.", "cuota": "Estimated monthly payment", "prestamo": "Loan amount", "inicial": "Down payment", "gastos": "Estimated closing costs", "efectivo": "Cash needed to close", "ingreso": "Recommended household income", "intereses": "Total interest over the term", "tasaMes": "Equivalent monthly rate", "tipoLbl": "Home type", "iniLbl": "Down payment", "plazoLbl": "Term", "tasaLbl": "Rate", "mailTitleH": "Mortgage simulation", "mailTitleI": "Real estate investment simulation", "netaLbl": "Net annual yield", "brutaLbl": "Gross annual yield", "flujoMes": "Monthly cash flow", "efectivoInv": "Your own cash invested", "cocLbl": "Cash-on-cash return (annual)", "v5Lbl": "Estimated value in 5 years", "patrimonio5": "Equity in 5 years (value minus debt)", "retorno5": "Estimated total gain in 5 years", "payback": "Payback period", "noPayback": "Not recovered from cash flow", "arriendoLbl": "Monthly rent", "finLbl": "Financing", "warnNeg": "Heads up: with these assumptions the rent doesn't cover expenses and the loan payment; you'd need to add money every month.", "errName": "Please enter your name.", "errPhone": "Please enter a valid phone number.", "errEmail": "Please enter a valid email.", "errConsent": "Please authorize the processing of your data.", "okSent": "Thank you. We've sent your report to <b>{email}</b>. If you don't see it in a few minutes, check your spam folder.", "okWa": "Thank you. To get your report, send us your simulation on WhatsApp:", "okWaLink": "send my simulation", "waIntro": "Hi Johana, I'm {n} and I'd like the report for this simulation:", "waContact": "My details:"}</script>
+<script type="application/json" id="calc-cfg">{"rates": {"date": "23/10/2026", "novis": {"min": 12.66, "max": 15.95, "default": 15.0}, "vis": {"min": 11.32, "max": 15.4, "default": 14.0}}, "closing": 2.5, "wa": "573124066324", "zoho": {"action": ""}}</script>
+<footer class="foot"><div class="wrap">
+ <div><b style="color:#F7F4EE;font-family:'Cormorant Garamond',serif;font-size:20px">Johana Bolaños</b><br>Real estate advisor · Bogotá, Colombia<br>
+ <a href="https://www.instagram.com/johanabolanos.inmo/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@johanabolanos.inmo" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/share/1A7pJb3Ej2/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="../en/blog.html">Blog</a><br>
+ <a href="../en/mortgage-calculator.html">Mortgage calculator</a><a href="../en/investment-calculator.html">Investment calculator</a><a href="../en/privacy-policy.html">Privacy policy</a></div>
+ <div style="max-width:520px">© 2026 Johana Bolaños. Property details are subject to verification. Blog articles are general guidance and do not replace advice from a lawyer or accountant for your specific case.</div>
+</div></footer>
+<a class="wa" href="https://wa.me/573124066324?text=Hi%20Johana%2C%20I%27d%20like%20real%20estate%20advice" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+<script src="../assets/site.js"></script><script src="../assets/calc.js"></script>
+</body>
+</html>
